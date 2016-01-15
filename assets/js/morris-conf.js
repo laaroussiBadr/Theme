@@ -65,22 +65,23 @@ var Script = function () {
       Morris.Bar({
         element: 'hero-bar',
         data: [
-          {device: 'iPhone', geekbench: 136},
-          {device: 'iPhone 3G', geekbench: 137},
-          {device: 'iPhone 3GS', geekbench: 275},
-          {device: 'iPhone 4', geekbench: 380},
-          {device: 'iPhone 4S', geekbench: 655},
-          {device: 'iPhone 5', geekbench: 1571}
+          {device: '2002-2008', geekbench: 126 373},
+          {device: '2008', geekbench: 152000},
+          {device: '2009', geekbench: 164000},
+          {device: '2010', geekbench: 173000},
+          {device: '2011', geekbench: 184000},
+          {device: '2012', geekbench: 198000},
+		  {device: '2013', geekbench: 207000}
         ],
         xkey: 'device',
         ykeys: ['geekbench'],
-        labels: ['Geekbench'],
+        labels: ['Capacité'],
         barRatio: 0.4,
         xLabelAngle: 35,
         hideHover: 'auto',
         barColors: ['#ac92ec']
       });
-
+	
       new Morris.Line({
         element: 'examplefirst',
         xkey: 'year',
@@ -94,7 +95,8 @@ var Script = function () {
           {year: '2012', value: 20}
         ]
       });
-
+		
+	
       $('.code-example').each(function (index, el) {
         eval($(el).text());
       });
